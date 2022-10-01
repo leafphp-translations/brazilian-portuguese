@@ -46,7 +46,7 @@ If you are an experienced developer coming from Leaf 2 or other frameworks, ther
 <details>
 <summary>Detalhes do tutorial</summary>
 
-- Leaf framework oferecer dois estilos de API: funcional e orientado a objetos. This tutorial is designed to work for both - you can choose your preferred style using the **Style preference** switches at the top. <a target="_blank" href="/docs/introduction/#class-mode-vs-functional-mode">Learn more about API styles</a>.
+- Leaf framework oferece dois estilos de API: funcional e orientado a objetos. This tutorial is designed to work for both - you can choose your preferred style using the **Style preference** switches at the top. <a target="_blank" href="/docs/introduction/#class-mode-vs-functional-mode">Learn more about API styles</a>.
 
 </details>
 
