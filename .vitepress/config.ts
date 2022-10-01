@@ -7,13 +7,13 @@ import { headerPlugin } from './headerMdPlugin'
 
 const nav = [
   {
-    text: 'Docs',
+    text: 'Documentação',
     activeMatch: `^/(docs|style-guide|examples|tutorial)/`,
     items: [
-      { text: 'Guide', link: '/docs/introduction/' },
+      { text: 'Guia', link: '/docs/introduction/' },
       { text: 'Tutorial', link: '/tutorial/' },
       {
-        text: 'Migration from Leaf 2',
+        text: 'Migrando de Leaf 2',
         link: '/docs/migration/introduction'
       },
       {
@@ -21,13 +21,13 @@ const nav = [
         link: 'https://codelabs.leafphp.dev'
       },
       {
-        text: 'Leaf 2 Docs',
+        text: 'Leaf 2 Documentação',
         link: 'https://archive.leafphp.dev'
       },
     ]
   },
   {
-    text: 'Ecosystem',
+    text: 'Ecossistema',
     activeMatch: `^/ecosystem/`,
     items: [
       {
@@ -72,19 +72,19 @@ const nav = [
     ]
   },
   {
-    text: 'Community',
+    text: 'Comunidade',
     activeMatch: `^/(about|community)/`,
     items: [
       {
-        text: 'Community',
+        text: 'Comunidade',
         ariaLabel: 'Community Menu',
         items: [
           {
-            text: 'Contribute to Leaf',
+            text: 'Contribuir com Leaf',
             link: '/community/contributing/'
           },
           {
-            text: 'Contribute to docs',
+            text: 'Contribuir com documentação',
             link: '/community/contributing/writing-guide'
           },
           {
@@ -92,11 +92,11 @@ const nav = [
             link: 'https://blog.leafphp.dev'
           },
           {
-            text: 'Team',
+            text: 'Time',
             link: '/community/team'
           },
           {
-            text: 'Join',
+            text: 'Participe',
             link: '/community/join'
           },
           {
@@ -106,7 +106,7 @@ const nav = [
         ]
       },
       {
-        text: 'Help',
+        text: 'Ajuda',
         ariaLabel: 'Help Menu',
         items: [
           {
@@ -130,7 +130,7 @@ const nav = [
     ]
   },
   {
-    text: 'Support Leaf',
+    text: 'Suporte Leaf',
     link: '/support/'
   }
   // {
