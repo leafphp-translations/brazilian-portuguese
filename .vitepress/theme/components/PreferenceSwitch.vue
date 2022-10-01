@@ -76,7 +76,7 @@ function useToggleFn(
   <div v-if="show" class="preference-switch">
     <button class="toggle" aria-label="preference switches toggle" aria-controls="preference-switches"
       :aria-expanded="isOpen" @click="toggleOpen" @mousedown="removeOutline" @blur="restoreOutline">
-      <span>Style Preference</span>
+      <span>Estilo de Código</span>
       <VTIconChevronDown class="vt-link-icon" :class="{ open: isOpen }" />
     </button>
     <div id="preference-switches" :hidden="!isOpen" :aria-hidden="!isOpen">

@@ -14,7 +14,7 @@ import VideoDocs from '/@theme/components/VideoDocs.vue'
 
 ## O que é Leaf PHP?
 
-Leaf é um pequeno e leve framework PHP para iniciar rapidamente aplicativos web e APIs limpos, simples, mas poderosos, de forma rápida e fácil. Ao longo dos anos, nós temos nos concentrado em entregar software mais simples e com mais perfomance, que podem ser usado em todos seus aplicativos PHP. 
+Leaf é um pequeno e leve framework PHP para iniciar aplicativos web e APIs limpos, simples, mas poderosos, de forma rápida e fácil. Ao longo dos anos, nós temos nos concentrado em entregar software mais simples e com mais perfomance, que podem ser usado em todos seus aplicativos PHP. 
 
 A versão 3 do Leaf tem mais a oferecer com temática centrada na experiência e a usabilidade do desenvolvedor, mas com todas vantagens garantindo que os usuários também tenham a melhor experiência.
 
