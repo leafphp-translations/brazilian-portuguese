@@ -59,8 +59,8 @@ import VueMasteryModal from './VueMasteryModal.vue';
       <h2>Eficiente ⏰</h2>
       <p>
         Muito rápido <br>
-        &lsaquo;Fonte de 40KB <br>
-        Tempo de desenvolvimento rápido louco </p>
+        Código fonte &lsaquo; 40KB <br>
+        Tempo de desenvolvimento extremamente rápido</p>
     </div>
   </section>
 
