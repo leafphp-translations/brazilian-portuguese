@@ -5,7 +5,7 @@ Bem vindo ao tutorial do framework Leaf!
 Esta é uma tentativa de lhe mostrar como trabalhar com Leaf framework. 
 O objetivo é lhe dar os conhecimentos necessários para construir um 
 aplicativo simples, você não precisa entender tudo para continuar, 
-no entanto, depois de conclui-lo, é aconselhável ler a documentação que detalham cada tópico.
+no entanto, depois de conclui-lo, é aconselhável ler a documentação que detalha cada tópico.
 
 ## PRÉ REQUISITOS
 
