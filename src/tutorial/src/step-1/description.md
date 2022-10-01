@@ -10,9 +10,9 @@ no entanto, depois de conclui-lo, é aconselhável ler a documentação que deta
 ## PRÉ REQUISITOS
 
 O tutorial presume que você tem conhecimento básico de PHP. 
-Se não tiveres experiência com PHP, pode não ser uma boa ideia pular 
-a introdução ao framework e os primeiros passos - [entender o básico](https://www.w3schools.com/php/default.asp)
-e então voltar! Experiência com outros frameworks pode ajudar, mas não é um requisito.
+Se não tiveres experiência com PHP, pode não ser a melhor ideia pular direto para um framework como seu primeiro passo 
+- [entenda o básico](https://www.w3schools.com/php/default.asp)
+e então volte! Experiência com outros frameworks pode ajudar, mas não é um requisito.
 
 ## COMO USAR ESSE TUTORIAL
 
