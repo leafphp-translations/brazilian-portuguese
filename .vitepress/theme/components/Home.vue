@@ -68,7 +68,7 @@ import VueMasteryModal from './VueMasteryModal.vue';
     <h2>Patrocinadores</h2>
     <SponsorsGroup tier="sponsor" showLabel placement="landing" />
 
-    <h2>Contribuintes de código</h2>
+    <h2>Colaboradores do projeto</h2>
     <SponsorsGroup tier="code" showLabel placement="landing" />
   </section>
 
