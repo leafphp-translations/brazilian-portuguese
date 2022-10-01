@@ -1,16 +1,16 @@
 # Como começar
 
-Bem vindo ao tutorial do framework Leaf!
+Bem-vindo ao tutorial do framework Leaf!
 
-Esta é uma tentativa de lhe mostrar como trabalhar com Leaf framework. 
-O objetivo é lhe dar os conhecimentos necessários para construir um 
+Esta é uma tentativa de mostrar-lhe como trabalhar com Leaf framework. 
+O objetivo é-lhe dar os conhecimentos necessários para construir um 
 aplicativo simples, você não precisa entender tudo para continuar, 
-no entanto, depois de conclui-lo, é aconselhável ler a documentação que detalha cada tópico.
+no entanto, após conclui-lo, é aconselhável ler a documentação que detalha cada tópico.
 
 ## PRÉ REQUISITOS
 
 O tutorial presume que você tem conhecimento básico de PHP. 
-Se não tiveres experiência com PHP, pode não ser a melhor ideia pular direto para um framework como seu primeiro passo 
+Se não tiver experiência com PHP, pode não ser a melhor ideia pular direto para um framework como o seu primeiro passo 
 - [entenda o básico](https://www.w3schools.com/php/default.asp)
 e então volte! Experiência com outros frameworks pode ajudar, mas não é um requisito.
 
