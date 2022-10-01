@@ -142,36 +142,36 @@ const nav = [
 
 const mainSidebar = [
   {
-    text: 'Essentials',
+    text: 'Essencial',
     items: [
-      { text: 'Introduction', link: '/docs/introduction/' },
-      { text: 'Features', link: '/docs/introduction/features' }
+      { text: 'Introdução', link: '/docs/introduction/' },
+      { text: 'Recursos', link: '/docs/introduction/features' }
     ]
   },
   {
-    text: 'Quick Start',
+    text: 'Início rápido',
     items: [
-      { text: 'Installation', link: '/docs/introduction/installation' },
-      { text: 'Migration Guide', link: '/docs/migration/introduction' },
-      { text: 'URL Rewriting', link: '/docs/introduction/url-rewriting' },
-      { text: 'Leaf tutorial', link: '/tutorial/' },
-      { text: 'Your first app', link: '/docs/introduction/first-app' },
-      { text: 'Functional Mode', link: '/docs/tooling/functions' },
-      { text: 'Modules', link: '/modules/' },
-      { text: 'Deployment', link: '/docs/tooling/deployment' },
-      { text: 'Testing', link: '/docs/tooling/testing' },
+      { text: 'Instalação', link: '/docs/introduction/installation' },
+      { text: 'Guia de migração', link: '/docs/migration/introduction' },
+      { text: 'Reescrita de URL', link: '/docs/introduction/url-rewriting' },
+      { text: 'Tutorial', link: '/tutorial/' },
+      { text: 'Sua primeira aplicação', link: '/docs/introduction/first-app' },
+      { text: 'Modo funcional', link: '/docs/tooling/functions' },
+      { text: 'Modulos', link: '/modules/' },
+      { text: 'Implantação', link: '/docs/tooling/deployment' },
+      { text: 'Testes', link: '/docs/tooling/testing' },
     ]
   },
   {
     text: 'Config',
     items: [
-      { text: 'Overview', link: '/docs/config/' },
+      { text: 'Visão geral', link: '/docs/config/' },
       { text: 'Instance and Mode', link: '/docs/config/nsm' },
-      { text: 'App settings', link: '/docs/config/settings' }
+      { text: 'Configurações', link: '/docs/config/settings' }
     ]
   },
   {
-    text: 'The basics',
+    text: 'O básico',
     collapsible: false,
     collapsed: false,
     items: [
@@ -188,20 +188,20 @@ const mainSidebar = [
     ]
   },
   {
-    text: 'Routing',
+    text: 'Roteamento',
     collapsible: true,
     collapsed: true,
     items: [
-      { text: 'Basic Routing', link: '/docs/routing/' },
+      { text: 'Basico sobre rotas', link: '/docs/routing/' },
       { text: 'Error Handling', link: '/docs/routing/errors' },
-      { text: 'Sub routing', link: '/docs/routing/sub-routing' },
-      { text: 'Dynamic routing', link: '/docs/routing/dynamic' },
+      { text: 'Sub rotas', link: '/docs/routing/sub-routing' },
+      { text: 'Rotas dinâmicas', link: '/docs/routing/dynamic' },
       {
         text: 'Optional Route sub-patterns',
         link: '/docs/routing/sub-patterns'
       },
-      { text: 'Subfolder support', link: '/docs/routing/sub-folder' },
-      { text: 'Using controllers', link: '/docs/routing/controller' }
+      { text: 'Suporte a subfolder', link: '/docs/routing/sub-folder' },
+      { text: 'Usando controllers', link: '/docs/routing/controller' }
     ]
   },
   {
@@ -209,30 +209,30 @@ const mainSidebar = [
     collapsible: true,
     collapsed: true,
     items: [
-      { text: 'Introduction', link: '/modules/db/' },
+      { text: 'Introdução', link: '/modules/db/' },
       { text: 'Leaf DB v1', link: '/modules/db/v/1/' },
-      { text: 'New in v2', link: '/modules/db/v/2/new' },
+      { text: 'Novidades em v2', link: '/modules/db/v/2/new' },
       { text: 'Leaf DB v2', link: '/modules/db/v/2/' },
       { text: 'Query Builder', link: '/modules/db/v/2/builder' },
       { text: 'Leaf Redis', link: '/modules/redis/' }
     ]
   },
   {
-    text: 'Authentication',
+    text: 'Autenticação',
     collapsible: true,
     collapsed: true,
     items: [
-      { text: 'Introduction', link: '/modules/auth/' },
+      { text: 'Introdução', link: '/modules/auth/' },
       { text: 'Leaf Auth v1', link: '/modules/auth/v/1/' },
       { text: 'Leaf Auth v2', link: '/modules/auth/v/2/' },
       { text: 'Leaf Auth v2.1', link: '/modules/auth/v/2.1/' },
       { text: 'Auth Config', link: '/modules/auth/v/2.1/config' },
-      { text: 'Auth Methods', link: '/modules/auth/v/2.1/methods' },
+      { text: 'Auth Métods', link: '/modules/auth/v/2.1/methods' },
       { text: 'Session Support', link: '/modules/auth/v/2.1/session' }
     ]
   },
   {
-    text: 'Utilities',
+    text: 'Utilitários',
     collapsible: true,
     collapsed: true,
     items: [
@@ -250,7 +250,7 @@ const mainSidebar = [
     collapsible: true,
     collapsed: true,
     items: [
-      { text: 'Introduction', link: '/modules/views/' },
+      { text: 'Introdução', link: '/modules/views/' },
       { text: 'Bare UI', link: '/modules/views/bareui/' },
       { text: 'Viewi PHP', link: '/modules/views/viewi/' },
       { text: 'Leaf Blade', link: '/modules/views/blade/' },
@@ -281,21 +281,21 @@ const mainSidebar = [
 
 const communitySidebar = [
   {
-    text: 'Community',
+    text: 'Comunidade',
     collapsible: false,
     items: [
-      { text: 'History', link: '/community/history' },
+      { text: 'História', link: '/community/history' },
       { text: 'FAQ', link: '/community/faq' },
       { text: 'Blog', link: 'https://blog.leafphp.dev' },
-      { text: 'Meet the Team', link: '/community/team' },
-      { text: 'Our Community', link: '/community/join' },
-      { text: 'Code of Conduct', link: '/coc/' },
-      { text: 'Contribution Guide', link: '/community/contributing/' },
+      { text: 'Conheça a equipe', link: '/community/team' },
+      { text: 'Nossa Comunidade', link: '/community/join' },
+      { text: 'Código de conduta', link: '/coc/' },
+      { text: 'Guia de contribuição', link: '/community/contributing/' },
       {
         text: 'Writing Guide',
         link: '/community/contributing/writing-guide'
       },
-      { text: 'Support Leaf', link: '/support/' },
+      { text: 'Suporte Leaf', link: '/support/' },
       { text: 'Twitter', link: 'https://twitter.com/leafphp' },
       { text: 'Discord', link: 'https://discord.gg/Pkrm9NJPE3' },
       {
@@ -330,7 +330,7 @@ export const sidebar = {
           link: '/aloe-cli/v/1.2.3/commands/misc-commands'
         },
         {
-          text: '"Generate" Commands',
+          text: '"Gerando" Commands',
           link: '/aloe-cli/v/1.2.3/commands/g-commands'
         },
         {
@@ -348,7 +348,7 @@ export const sidebar = {
       collapsible: false,
       items: [
         {
-          text: 'Custom Commands',
+          text: 'Commands customizados',
           link: '/aloe-cli/v/1.2.3/commands/custom'
         },
         {
@@ -372,9 +372,9 @@ export const sidebar = {
     {
       text: 'Global API',
       items: [
-        { text: 'Application', link: '/api/application' },
+        { text: 'Aplicação', link: '/api/application' },
         {
-          text: 'General',
+          text: 'Geral',
           link: '/api/general'
         }
       ]
@@ -460,10 +460,10 @@ export const sidebar = {
   ],
   '/examples/': [
     {
-      text: 'Basic',
+      text: 'Básico',
       items: [
         {
-          text: 'Hello World',
+          text: 'Olá mundo',
           link: '/examples/#hello-world'
         },
         {
