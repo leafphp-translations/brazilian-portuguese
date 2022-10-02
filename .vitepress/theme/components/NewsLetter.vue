@@ -6,7 +6,7 @@ import { VTLink } from '@leafphp/docs-theme'
   <section id="newsletter" class="NewsLetter">
     <div class="container">
       <h2 class="title">Leaf PHP Social.</h2>
-      <!-- <h2 class="title">Subscribe to our weekly newsletter.</h2> -->
+      <!-- <h2 class="title">Assine nossa newsletter semanal.</h2> -->
 
       <!-- <div class="form">
         <form
@@ -23,7 +23,7 @@ import { VTLink } from '@leafphp/docs-theme'
             id="member_email"
             name="member[email]"
             type="email"
-            placeholder="Email address"
+            placeholder="Endereço de email"
             required
           />
 
@@ -33,20 +33,18 @@ import { VTLink } from '@leafphp/docs-theme'
               id="member_submit"
               name="member[subscribe]"
               type="submit"
-              value="SUBSCRIBE"
+              value="INSCREVER-SE"
             />
           </div>
         </form>
       </div> -->
 
       <p class="help">
-        You can read our blog posts at
-        <VTLink class="link" href="https://blog.leafphp.dev/" no-icon>blog.leafphp.dev</VTLink>. You may also go social
-        at
-        <VTLink class="link" href="https://twitter.com/leafphp" no-icon>Twitter</VTLink>, or join our
-        <VTLink class="link" href="https://github.com/leafsphp/leaf/discussions/37" no-icon>discussions</VTLink> or
-        watch our <VTLink class="link" href="https://www.youtube.com/channel/UCllE-GsYy10RkxBUK0HIffw" no-icon>videos on
-          YouTube.</VTLink>
+        Você pode ler as postagens em nosso Blog
+        <VTLink class="link" href="https://blog.leafphp.dev/" no-icon>blog.leafphp.dev</VTLink>. Você também pode nos seguir no
+        <VTLink class="link" href="https://twitter.com/leafphp" no-icon>Twitter</VTLink>, participar de nossas
+        <VTLink class="link" href="https://github.com/leafsphp/leaf/discussions/37" no-icon>discussões</VTLink> ou assista nossos 
+        <VTLink class="link" href="https://www.youtube.com/channel/UCllE-GsYy10RkxBUK0HIffw" no-icon>vídeos no YouTube.</VTLink>
 
         <div class="flex flex:center-all mt:_4">
           <a href="https://www.netlify.com">
