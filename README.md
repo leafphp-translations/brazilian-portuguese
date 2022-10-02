@@ -1,20 +1,20 @@
 # Leaf 3
 
-## Contributing
+## Contribuindo
 
-This site is built with [VitePress](https://github.com/vuejs/vitepress) and depends on [@leafphp/docs-theme](https://github.com/leafsphp/leaf-docs-theme). Site content is written in Markdown format located in `src`. For simple edits, you can directly edit the file on GitHub and generate a Pull Request.
+Este site foi desenvolvido com [VitePress](https://github.com/vuejs/vitepress) e depende de [@leafphp/docs-theme](https://github.com/leafsphp/leaf-docs-theme). O conteúdo do site está escrito no formato Markdown, e está localizado em `src`. Para edições simples, você pode editar o arquivo diretamente no GitHub e gerar uma `Pull Request`.
 
-For local development, [pnpm](https://pnpm.io/) is preferred as package manager:
+Para desenvolvimento local, [pnpm](https://pnpm.io/) é preferível como gerenciador de pacotes:
 
 ```bash
 pnpm i
 pnpm run dev
 ```
 
-This project requires Node.js to be `v14.0.0` or higher, because we use new JavaScript features in our code, such as optional chaining.
+Este projeto requer que a versão do Node.js seja `v14.0.0` ou maior, porque usamos recursos novos do JavaScript em nosso código, como o `optional chaining`.
 
-## Working on the content
+## Trabalhando no conteúdo
 
-- See VitePress docs on supported [Markdown Extensions](https://vitepress.vuejs.org/guide/markdown.html) and the ability to [use Vue syntax inside markdown](https://vitepress.vuejs.org/guide/using-vue.html).
+- Veja a documentação do VitePress sobre as [Extensões Markdown](https://vitepress.vuejs.org/guide/markdown.html) suportadas e a capacidade de [usar sintaxe Vue dentro do markdown](https://vitepress.vuejs.org/guide/using-vue.html).
 
-- See the [Writing Guide](http://localhost:3000/community/contributing/writing-guide.html) for our rules and recommendations on writing and maintaining documentation content.
+- Veja o [Guia de Escrita](http://localhost:3000/community/contributing/writing-guide.html) para conhecer nossas regras e recomendações sobre como escrever e manter o conteúdo da documentação.

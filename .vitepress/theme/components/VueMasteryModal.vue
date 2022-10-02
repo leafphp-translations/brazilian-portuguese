@@ -43,10 +43,10 @@ watch(
 
           <div class="vuemastery-modal-footer">
             <p class="vuemastery-modal-footer-text">
-              Watch our videos on
+              Assisa nossos vídeos em nosso
               <a href="https://www.youtube.com/channel/UCllE-GsYy10RkxBUK0HIffw" target="_blank"
                 rel="sponsored noopener" title="Leaf PHP on YouTube">
-                our YouTube channel.</a>
+                canal no YouTube.</a>
             </p>
           </div>
         </div>

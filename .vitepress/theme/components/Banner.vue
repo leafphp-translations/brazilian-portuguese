@@ -20,9 +20,9 @@ function dismiss() {
 
 <template>
   <div class="banner" v-if="open">
-    You’re browsing the documentation for v3.x.
-    <a href="https://archive.leafphp.dev" target="_blank" rel="noopener noreferrer">Click here</a>
-    for earlier leaf/mvc versions.
+    Você está visualizando a versão v3.x. da documentação.
+    <a href="https://archive.leafphp.dev" target="_blank" rel="noopener noreferrer">Clique aqui</a>
+    para as versõe anteriores do leaf/mvc.
   </div>
 </template>
 
