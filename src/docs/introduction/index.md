@@ -36,17 +36,21 @@ Se você não tem conhecimento com PHP, nós recomendamos que você confira o [W
   link="https://www.youtube.com/embed/PuOk5xqTIsA"
 />
 
-To quickly get started with Leaf, check out our [installation guide](/docs/introduction/installation.html). This gives you an in-depth explanation of how to set up leaf using various methods.
+Para iniciar rapidamente com o Leaf, veja nosso [guia de instalção](/docs/introduction/installation.html). Isso lhe dá a você uma explicação detalhada de como montar o projeto com leaf de várias maneiras.  
 
-::: tip Migrating
-Already know Leaf 2 and just want to learn about what's new in Leaf 3? Check out the [Migration Guide](/docs/migration/introduction.html)!
+::: tip Migrando
+Já conhece Leaf 2 e quer saber o que há de novo no Leaf 3? Veja o [Guia de migração](/docs/migration/introduction.html)!
 :::
 
-Below is a hello world example which takes you through the core of Leaf. Other parts of the docs cover deeper examples. You can also refer to our [codelab experiments](https://codelabs.leafphp.dev) for real world examples and use-cases.
+Abaixo temos um exemplo de "Olá Mundo" que leva você ao core do Leaf. Outras partes da documentação tem exemplos mais detalhados.
+Você também pode consultar nosso [experimentos com codelab](https://codelabs.leafphp.dev) para exemplos do mundo real e estudos de caso. 
+
 
 ## Exemplo "Olá Mundo"
 
-At the core of Leaf PHP is a system that enables us to declaratively define applications using a friendly and straight-forward syntax:
+No core do Leaf PHP o temos  um sistema que permite 
+que nós definamos e declaremos aplicações usando uma 
+sintaxe amigável e direta.
 
 **index.php:**
 
@@ -60,7 +64,7 @@ require __DIR__ . '/vendor/autoload.php';
 $app = new Leaf\App;
 
 $app->get('/', function () {
-  echo 'Hello world';
+  echo 'Olá mundo';
 });
 
 $app->run();
@@ -76,7 +80,7 @@ $app->run();
 require __DIR__ . '/vendor/autoload.php';
 
 app()->get('/', function () {
-  echo 'Hello world';
+  echo 'Olá mundo';
 });
 
 app()->run();
@@ -84,9 +88,11 @@ app()->run();
 
 </div>
 
-We have already created our very first Leaf app! This is as simple as it gets.
+Nós já criamos nossa primeira aplicação Leaf! 
+Isto é o mais simples que podemos imaginar.
 
-In addition, we can output data with Leaf response. This is a module that allows us to output data of various types without any hassle.
+Além disso, podemos fazer o retorno com Leaf response.
+Esse módulo nos permite ter vários tipos de retorno sem esforço.  
 
 <div class="class-mode">
 
@@ -98,13 +104,15 @@ require __DIR__ . '/vendor/autoload.php';
 $app = new Leaf\App;
 
 $app->get('/', function () use($app) {
-  $app->response()->markup('Hello world');
+  $app->response()->markup('Olá mundo');
 });
 
 $app->run();
 ```
-
-Now you might be wondering why we need to go through all of this just to return some HTML when we can just use echo. The reason for this is simple. `Response` takes care of a lot of issues for us under the hood and renders exactly what we expect. Let's look at an example below.
+Agora você pode estar se perguntando, porque nós precisamos de tudo isso 
+apenas para retornar HTML quando poderíamos utilizar apenas `echo`. A razão para isso é simples
+`Response` resolve muitos problemas "por baixo dos panos" e faz exatamente o que é esperado.
+Veja um exemplo abaixo.
 
 </div>
 <div class="functional-mode">
@@ -115,14 +123,15 @@ Now you might be wondering why we need to go through all of this just to return 
 require __DIR__ . '/vendor/autoload.php';
 
 app()->get('/', function () {
-  response()->markup('Hello world');
+  response()->markup('Olá mundo');
 });
 
 app()->run();
 ```
 
-We use `response` here instead of `echo` because it takes care of a lot of issues for us under the hood and renders exactly what we expect. Let's look at an example below.
-
+Nós usamos `response` ao invés `echo` 
+porque isso renderiza examente o que esperamos.
+Veja um exemplo abaixo.
 </div>
 
 <div class="class-mode">
@@ -157,7 +166,7 @@ app()->get('/', function () {
   // set content-type to json
   Leaf\Http\Headers::contentJSON();
 
-  echo '<b>Hello world</b>';
+  echo '<b>Olá mundo</b>';
 });
 
 app()->run();
@@ -165,7 +174,7 @@ app()->run();
 
 </div>
 
-When we run this, we get "\<b>Hello world\</b>" instead of **Hello World**
+Quando executamos esse emplos, nós obtemos "\<b>Olá mundo\</b>" ao invés de **Olá mundo**
 
 Unlike the confusion above between the content type and echo, Leaf response makes sure that whatever content we're trying to render is reflected in the content type. This is just one of the many things that response takes care of automatically.
 
