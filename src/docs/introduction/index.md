@@ -176,17 +176,22 @@ app()->run();
 
 Quando executamos esse emplos, nós obtemos "\<b>Olá mundo\</b>" ao invés de **Olá mundo**
 
-Unlike the confusion above between the content type and echo, Leaf response makes sure that whatever content we're trying to render is reflected in the content type. This is just one of the many things that response takes care of automatically.
+Ao contrário da confusão acima entre o `content type` e `echo`, Leaf response garante
+que o conteúdo reflita o `content type`. Esta é apenas uma das muitas coisas que o `response`  se encarrega de fazer 
+de forma transparente
 
-## Functional Mode
+## Modo Funcional
 
-We have mostly talked about general features that are the same even in Leaf 2, so let's talk about some spice in Leaf 3.
+Nós temos principalmente falado sobre as caracteriscas gerais que são as mesmas que temos no Leaf 2,
+então vamos falar sobre o "tempero" adicionado ao Leaf 3 
 
 ::: tip
-This is just an introduction to functional mode. Read the [functional mode documentation](/docs/tooling/functions.html) for the full explanation.
+Está é apenas uma introdução ao modo funcionado. Leia a [documentçao para o modo funcional](/docs/tooling/functions.html) para uma explicação completa.
 :::
 
-Basically, leaf 3 comes with global helper functions that take away the only pain anyone has ever had in using leaf, i.e., long namespaces and class initializers. Let's rewrite the first example in functional mode.
+Basicamente Leaf 3 vem com um helper global de funções que tiram a única dor 
+que alguém já teve ao usar o Leaf, ou seja, longos `namespaces` e instanciação de classes. 
+Vamos reescrever nosso primeiro exemplo de modo funcional
 
 ```php
 <?php
@@ -194,21 +199,25 @@ Basically, leaf 3 comes with global helper functions that take away the only pai
 require __DIR__ . '/vendor/autoload.php';
 
 app()->get('/', function () {
-  response()->markup('Hello world');
+  response()->markup('Olá mundo');
 });
 
 app()->run();
 ```
 
-You'll notice that we've gotten rid of the lengthy `use Leaf\Http\Response;` and even the leaf initializer. Leaf 3 helps you focus on only what matters: your application. Everything is either done for you under the hood or made available to you in easy-to-use tools.
+Você deve notar que nos livramos de `use Leaf\Http\Response;` e também da instanciação da classe do Leaf. O Leaf 3 
+ajuda a se concentrar no realmente importa: a lógica da sua aplicação. Tudo é feito pelo framework e 
+dispobilizado através de ferramentas fáceis de usar.
 
-### Handling User Input
+### Trabalhando com entrada de dados
 
-One very important part of building web apps/APIs is user input. Users may pass data into your leaf app through forms, http request bodies, URLs, ...
+Uma parte muito importe da construção de web apps/APIs é a entrada de dados pelo usuário.
+Usuários podem enviar dados para seu aplicativo atráveis de formulários, http request, bodys, URLs, etc... 
 
-You must read this data and make sure it can't harm your system before performing any operations on it. This can be very clumsy when done raw with PHP, especially when the data comes in through multiple channels. Leaf has, however, prepared a simple handler for this: `Leaf\Http\Request`. Since we are using functional mode, we will use the `request` method instead of this lengthy class.
+Você deve ler estes dados e certificar-se que eles não podem quebrar seu sistema antes de realizar qualquer operação.
+Isso pode ser muito complicado se utilizarmos PHP puro, especialmente quanto há multiplos pontos de entrada. Leaf, entretanto, tem um manipulador simples para isso: `Leaf\Http\Request`. Como estamos utilizando o modo funcionando, nós vamos usar o método `request` no lugar da classe.   
 
-The user navigates to /?greeting=hello%20world
+O usuário vai para /?greeting=hello%20world
 
 ```php
 <?php
@@ -230,16 +239,17 @@ app()->run();
 
 The most beautiful thing about the request object is that all data passed into your app is automatically sanitized to prevent attacks like XSS. You have simple and safe code working for you.
 
-## Class mode vs Functional mode
+## Orientado a objetos vs modo funcional
 
-Leaf supports two different ways of writing your code:
+Leaf suporta duas maneiras diferentes de você escrever seu código.
 
-- Using functional mode which you saw above
-- Using class mode which is what has been used since Leaf v1
+- Usando modo funcional que vimos acima.
+- Usando o modo orientado a objetos que tem sido usado desde de Lead v1.
 
-### Class Mode
+### Orientado a objetos
 
-This method is the default for most frameworks. Since leaf comes with classes, you can entirely build your aplication using those classes. like the `Leaf\Http\Response` class.
+Está é a maneira padrão da maior parte dos frameworks.
+Since leaf comes with classes, you can entirely build your aplication using those classes. like the `Leaf\Http\Response` class.
 
 ```php
 <?php
@@ -373,11 +383,11 @@ app()->run();
 
 Just as you saw above, most Leaf modules require absolutely no configuration in order to work with the Leaf core. They just fit right in.
 
-## Ready for More?
+## Pronto para mais?
 
 We've briefly introduced the most basic features of Leaf 3 - the rest of this guide will cover them and other advanced features in much finer detail, so make sure to read through it!
 
-## Next Steps
+## Próximos passos
 
 If you skipped the [Introduction](/guide/introduction), we strongly recommend reading it before moving on to the rest of the documentation.
 
