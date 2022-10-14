@@ -109,6 +109,7 @@ $app->get('/', function () use($app) {
 
 $app->run();
 ```
+
 Agora você pode estar se perguntando, porque nós precisamos de tudo isso 
 apenas para retornar HTML quando poderíamos utilizar apenas `echo`. A razão para isso é simples
 `Response` resolve muitos problemas "por baixo dos panos" e faz exatamente o que é esperado.
