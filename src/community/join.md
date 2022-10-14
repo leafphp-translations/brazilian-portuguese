@@ -11,7 +11,7 @@ Agora vamos responser sobre como a comunidade pode ajudar você e como você pod
 
 ### Código de conduta
 
-Nosso [código de conduta](/doc/) is a guide to make it easier to enrich all of us and the technical communities in which we participate.
+Nosso [código de conduta](/docs/) is a guide to make it easier to enrich all of us and the technical communities in which we participate.
 
 ### Obtendo suporte
 
