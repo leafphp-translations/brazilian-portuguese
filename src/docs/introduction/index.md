@@ -2,7 +2,7 @@
 # Introdução
 
 ::: tip ⚡️ Oficial Release
-Está é a documentação do Lead v3.0 
+Está é a documentação do Lead v3.0
 
 - [**Leaf 2 docs**](https://archive.leafphp.dev)
 - [**Leaf 1 docs**](https://v1.leafphp.dev)
@@ -14,7 +14,7 @@ import VideoDocs from '/@theme/components/VideoDocs.vue'
 
 ## O que é Leaf PHP?
 
-Leaf é um pequeno e leve framework PHP para iniciar aplicativos web e APIs limpos, simples, mas poderosos, de forma rápida e fácil. Ao longo dos anos, nós temos nos concentrado em entregar software mais simples e com mais perfomance, que podem ser usado em todos seus aplicativos PHP. 
+Leaf é um pequeno e leve framework PHP para iniciar aplicativos web e APIs limpos, simples, mas poderosos, de forma rápida e fácil. Ao longo dos anos, nós temos nos concentrado em entregar software mais simples e com mais perfomance, que podem ser usado em todos seus aplicativos PHP.
 
 A versão 3 do Leaf tem mais a oferecer com temática centrada na experiência e a usabilidade do desenvolvedor, mas com todas vantagens garantindo que os usuários também tenham a melhor experiência.
 
@@ -43,13 +43,12 @@ Já conhece Leaf 2 e quer saber o que há de novo no Leaf 3? Veja o [Guia de mig
 :::
 
 Abaixo temos um exemplo de "Olá Mundo" que leva você ao core do Leaf. Outras partes da documentação tem exemplos mais detalhados.
-Você também pode consultar nosso [experimentos com codelab](https://codelabs.leafphp.dev) para exemplos do mundo real e estudos de caso. 
-
+Você também pode consultar nosso [experimentos com codelab](https://codelabs.leafphp.dev) para exemplos do mundo real e estudos de caso.
 
 ## Exemplo "Olá Mundo"
 
-No core do Leaf PHP o temos  um sistema que permite 
-que nós definamos e declaremos aplicações usando uma 
+No core do Leaf PHP o temos  um sistema que permite
+que nós definamos e declaremos aplicações usando uma
 sintaxe amigável e direta.
 
 **index.php:**
@@ -71,7 +70,6 @@ $app->run();
 ```
 
 </div>
-
 <div class="functional-mode">
 
 ```php
@@ -88,7 +86,7 @@ app()->run();
 
 </div>
 
-Nós já criamos nossa primeira aplicação Leaf! 
+Nós já criamos nossa primeira aplicação Leaf!
 Isto é o mais simples que podemos imaginar.
 
 Além disso, podemos fazer o retorno com Leaf response.
@@ -110,7 +108,7 @@ $app->get('/', function () use($app) {
 $app->run();
 ```
 
-Agora você pode estar se perguntando, porque nós precisamos de tudo isso 
+Agora você pode estar se perguntando, porque nós precisamos de tudo isso
 apenas para retornar HTML quando poderíamos utilizar apenas `echo`. A razão para isso é simples
 `Response` resolve muitos problemas "por baixo dos panos" e faz exatamente o que é esperado.
 Veja um exemplo abaixo.
@@ -130,9 +128,10 @@ app()->get('/', function () {
 app()->run();
 ```
 
-Nós usamos `response` ao invés `echo` 
+Nós usamos `response` ao invés `echo`
 porque isso renderiza examente o que esperamos.
 Veja um exemplo abaixo.
+
 </div>
 
 <div class="class-mode">
@@ -155,7 +154,6 @@ $app->run();
 ```
 
 </div>
-
 <div class="functional-mode">
 
 ```php
@@ -178,20 +176,20 @@ app()->run();
 Quando executamos esse emplos, nós obtemos "\<b>Olá mundo\</b>" ao invés de **Olá mundo**
 
 Ao contrário da confusão acima entre o `content type` e `echo`, Leaf response garante
-que o conteúdo reflita o `content type`. Esta é apenas uma das muitas coisas que o `response`  se encarrega de fazer 
+que o conteúdo reflita o `content type`. Esta é apenas uma das muitas coisas que o `response`  se encarrega de fazer
 de forma transparente
 
 ## Modo Funcional
 
 Nós temos principalmente falado sobre as caracteriscas gerais que são as mesmas que temos no Leaf 2,
-então vamos falar sobre o "tempero" adicionado ao Leaf 3 
+então vamos falar sobre o "tempero" adicionado ao Leaf 3
 
 ::: tip
 Está é apenas uma introdução ao modo funcionado. Leia a [documentçao para o modo funcional](/docs/tooling/functions.html) para uma explicação completa.
 :::
 
-Basicamente Leaf 3 vem com um helper global de funções que tiram a única dor 
-que alguém já teve ao usar o Leaf, ou seja, longos `namespaces` e instanciação de classes. 
+Basicamente Leaf 3 vem com um helper global de funções que tiram a única dor
+que alguém já teve ao usar o Leaf, ou seja, longos `namespaces` e instanciação de classes.
 Vamos reescrever nosso primeiro exemplo de modo funcional
 
 ```php
@@ -206,17 +204,17 @@ app()->get('/', function () {
 app()->run();
 ```
 
-Você deve notar que nos livramos de `use Leaf\Http\Response;` e também da instanciação da classe do Leaf. O Leaf 3 
-ajuda a se concentrar no realmente importa: a lógica da sua aplicação. Tudo é feito pelo framework e 
+Você deve notar que nos livramos de `use Leaf\Http\Response;` e também da instanciação da classe do Leaf. O Leaf 3
+ajuda a se concentrar no realmente importa: a lógica da sua aplicação. Tudo é feito pelo framework e
 dispobilizado através de ferramentas fáceis de usar.
 
 ### Trabalhando com entrada de dados
 
 Uma parte muito importe da construção de web apps/APIs é a entrada de dados pelo usuário.
-Usuários podem enviar dados para seu aplicativo atráveis de formulários, http request, bodys, URLs, etc... 
+Usuários podem enviar dados para seu aplicativo atráveis de formulários, http request, bodys, URLs, etc...
 
 Você deve ler estes dados e certificar-se que eles não podem quebrar seu sistema antes de realizar qualquer operação.
-Isso pode ser muito complicado se utilizarmos PHP puro, especialmente quanto há multiplos pontos de entrada. Leaf, entretanto, tem um manipulador simples para isso: `Leaf\Http\Request`. Como estamos utilizando o modo funcionando, nós vamos usar o método `request` no lugar da classe.   
+Isso pode ser muito complicado se utilizarmos PHP puro, especialmente quanto há multiplos pontos de entrada. Leaf, entretanto, tem um manipulador simples para isso: `Leaf\Http\Request`. Como estamos utilizando o modo funcionando, nós vamos usar o método `request` no lugar da classe.
 
 O usuário vai para /?greeting=hello%20world
 
