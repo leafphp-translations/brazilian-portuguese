@@ -4,14 +4,14 @@ title: "Nossa Comunidade"
 
 # Participe de Leaf PHP Community!
 
-A comunidade Leaf está crescendo de forma incrivelmente rápida e se você está lendo isso, há uma boa chande de você estar pronto para se juntar a ela. Então... Seja bem-vindo 
+A comunidade Leaf está crescendo de forma incrivelmente rápida e se você está lendo isso, há uma boa chande de você estar pronto para se juntar a ela. Então... Seja bem-vindo
 Agora vamos responser sobre como a comunidade pode ajudar você e como você pode ajudar a comunidade.
 
 ## Recursos
 
 ### Código de conduta
 
-Nosso [código de conduta](/docs/) is a guide to make it easier to enrich all of us and the technical communities in which we participate.
+Nosso [código de conduta](/docs/introduction/) is a guide to make it easier to enrich all of us and the technical communities in which we participate.
 
 ### Obtendo suporte
 
