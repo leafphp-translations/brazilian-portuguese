@@ -2,7 +2,7 @@
 # Introdução
 
 ::: tip ⚡️ Oficial Release
-Está é a documentação do Lead v3.0 
+Está é a documentação do Lead v3.0
 
 - [**Leaf 2 docs**](https://archive.leafphp.dev)
 - [**Leaf 1 docs**](https://v1.leafphp.dev)
@@ -14,7 +14,7 @@ import VideoDocs from '/@theme/components/VideoDocs.vue'
 
 ## O que é Leaf PHP?
 
-Leaf é um pequeno e leve framework PHP para iniciar aplicativos web e APIs limpos, simples, mas poderosos, de forma rápida e fácil. Ao longo dos anos, nós temos nos concentrado em entregar software mais simples e com mais perfomance, que podem ser usado em todos seus aplicativos PHP. 
+Leaf é um pequeno e leve framework PHP para iniciar aplicativos web e APIs limpos, simples, mas poderosos, de forma rápida e fácil. Ao longo dos anos, nós temos nos concentrado em entregar software mais simples e com mais perfomance, que podem ser usado em todos seus aplicativos PHP.
 
 A versão 3 do Leaf tem mais a oferecer com temática centrada na experiência e a usabilidade do desenvolvedor, mas com todas vantagens garantindo que os usuários também tenham a melhor experiência.
 
@@ -43,13 +43,12 @@ Já conhece Leaf 2 e quer saber o que há de novo no Leaf 3? Veja o [Guia de mig
 :::
 
 Abaixo temos um exemplo de "Olá Mundo" que leva você ao core do Leaf. Outras partes da documentação tem exemplos mais detalhados.
-Você também pode consultar nosso [experimentos com codelab](https://codelabs.leafphp.dev) para exemplos do mundo real e estudos de caso. 
-
+Você também pode consultar nosso [experimentos com codelab](https://codelabs.leafphp.dev) para exemplos do mundo real e estudos de caso.
 
 ## Exemplo "Olá Mundo"
 
-No core do Leaf PHP o temos  um sistema que permite 
-que nós definamos e declaremos aplicações usando uma 
+No core do Leaf PHP o temos  um sistema que permite
+que nós definamos e declaremos aplicações usando uma
 sintaxe amigável e direta.
 
 **index.php:**
@@ -71,7 +70,6 @@ $app->run();
 ```
 
 </div>
-
 <div class="functional-mode">
 
 ```php
@@ -88,7 +86,7 @@ app()->run();
 
 </div>
 
-Nós já criamos nossa primeira aplicação Leaf! 
+Nós já criamos nossa primeira aplicação Leaf!
 Isto é o mais simples que podemos imaginar.
 
 Além disso, podemos fazer o retorno com Leaf response.
@@ -109,7 +107,8 @@ $app->get('/', function () use($app) {
 
 $app->run();
 ```
-Agora você pode estar se perguntando, porque nós precisamos de tudo isso 
+
+Agora você pode estar se perguntando, porque nós precisamos de tudo isso
 apenas para retornar HTML quando poderíamos utilizar apenas `echo`. A razão para isso é simples
 `Response` resolve muitos problemas "por baixo dos panos" e faz exatamente o que é esperado.
 Veja um exemplo abaixo.
@@ -129,9 +128,10 @@ app()->get('/', function () {
 app()->run();
 ```
 
-Nós usamos `response` ao invés `echo` 
+Nós usamos `response` ao invés `echo`
 porque isso renderiza examente o que esperamos.
 Veja um exemplo abaixo.
+
 </div>
 
 <div class="class-mode">
@@ -154,7 +154,6 @@ $app->run();
 ```
 
 </div>
-
 <div class="functional-mode">
 
 ```php
@@ -177,20 +176,20 @@ app()->run();
 Quando executamos esse emplos, nós obtemos "\<b>Olá mundo\</b>" ao invés de **Olá mundo**
 
 Ao contrário da confusão acima entre o `content type` e `echo`, Leaf response garante
-que o conteúdo reflita o `content type`. Esta é apenas uma das muitas coisas que o `response`  se encarrega de fazer 
+que o conteúdo reflita o `content type`. Esta é apenas uma das muitas coisas que o `response`  se encarrega de fazer
 de forma transparente
 
 ## Modo Funcional
 
 Nós temos principalmente falado sobre as caracteriscas gerais que são as mesmas que temos no Leaf 2,
-então vamos falar sobre o "tempero" adicionado ao Leaf 3 
+então vamos falar sobre o "tempero" adicionado ao Leaf 3
 
 ::: tip
 Está é apenas uma introdução ao modo funcionado. Leia a [documentçao para o modo funcional](/docs/tooling/functions.html) para uma explicação completa.
 :::
 
-Basicamente Leaf 3 vem com um helper global de funções que tiram a única dor 
-que alguém já teve ao usar o Leaf, ou seja, longos `namespaces` e instanciação de classes. 
+Basicamente Leaf 3 vem com um helper global de funções que tiram a única dor
+que alguém já teve ao usar o Leaf, ou seja, longos `namespaces` e instanciação de classes.
 Vamos reescrever nosso primeiro exemplo de modo funcional
 
 ```php
@@ -205,17 +204,17 @@ app()->get('/', function () {
 app()->run();
 ```
 
-Você deve notar que nos livramos de `use Leaf\Http\Response;` e também da instanciação da classe do Leaf. O Leaf 3 
-ajuda a se concentrar no realmente importa: a lógica da sua aplicação. Tudo é feito pelo framework e 
+Você deve notar que nos livramos de `use Leaf\Http\Response;` e também da instanciação da classe do Leaf. O Leaf 3
+ajuda a se concentrar no realmente importa: a lógica da sua aplicação. Tudo é feito pelo framework e
 dispobilizado através de ferramentas fáceis de usar.
 
 ### Trabalhando com entrada de dados
 
 Uma parte muito importe da construção de web apps/APIs é a entrada de dados pelo usuário.
-Usuários podem enviar dados para seu aplicativo atráveis de formulários, http request, bodys, URLs, etc... 
+Usuários podem enviar dados para seu aplicativo atráveis de formulários, http request, bodys, URLs, etc...
 
 Você deve ler estes dados e certificar-se que eles não podem quebrar seu sistema antes de realizar qualquer operação.
-Isso pode ser muito complicado se utilizarmos PHP puro, especialmente quanto há multiplos pontos de entrada. Leaf, entretanto, tem um manipulador simples para isso: `Leaf\Http\Request`. Como estamos utilizando o modo funcionando, nós vamos usar o método `request` no lugar da classe.   
+Isso pode ser muito complicado se utilizarmos PHP puro, especialmente quanto há multiplos pontos de entrada. Leaf, entretanto, tem um manipulador simples para isso: `Leaf\Http\Request`. Como estamos utilizando o modo funcionando, nós vamos usar o método `request` no lugar da classe.
 
 O usuário vai para /?greeting=hello%20world
 
@@ -237,7 +236,7 @@ app()->get('/', function () {
 app()->run();
 ```
 
-The most beautiful thing about the request object is that all data passed into your app is automatically sanitized to prevent attacks like XSS. You have simple and safe code working for you.
+A beleza sobre o objeto `request` é que todos os dados que passam pelo aplicativo são sanitizados automaticamente e evitam ataques como XSS. Você tem um código mais simples e seguro.
 
 ## Orientado a objetos vs modo funcional
 
@@ -249,7 +248,8 @@ Leaf suporta duas maneiras diferentes de você escrever seu código.
 ### Orientado a objetos
 
 Está é a maneira padrão da maior parte dos frameworks.
-Since leaf comes with classes, you can entirely build your aplication using those classes. like the `Leaf\Http\Response` class.
+Com Leaf foi contruído seguindo orientação,  você pode contruir sua aplicação inteira de modo orientado a objetos. 
+Como utilizando a classe `Leaf\Http\Response`.
 
 ```php
 <?php
@@ -259,15 +259,18 @@ require __DIR__ . "/vendor/autoload.php";
 $app = new Leaf\App;
 
 $app->get("/", function () {
-  echo "Hello world";
+  echo "Olá mundo";
 });
 
 $app->run();
 ```
 
-### Functional Mode
+### Modo funcional
 
-Classes become annoying to use and repeat, especially because of namespaces. You also sometimes need to put the instance of a class into a function's scope with `use`. Getting the particular instance of a class can be difficult which sometimes leads to reinitializing the class. For these reasons (and more), we created scopeless functions which allow you to quickly build your applications. These functions return instances of Leaf's classes so you don't need to use the classes yourself.
+Classes tornam-se incomodas de usar e repetidas, especialmente por causa dos `namespaces`. Você também pode precisar, algumas vezes, 
+colocar a instância de uma classe dentro do escopo de uma função, utilizando `use`. 
+Pegar a instância de uma classe pode ser difícil, algumas vezes, o que leva a reinicialização da classe. 
+Por essas razões (e outras), nós criamos  funções sem escopo que permite rapidamente construir aplicações. Essas funções devolvem instâncias de classes do framework para que você não precise usar as classes diretamente.
 
 ```php
 <?php
