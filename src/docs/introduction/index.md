@@ -236,7 +236,7 @@ app()->get('/', function () {
 app()->run();
 ```
 
-The most beautiful thing about the request object is that all data passed into your app is automatically sanitized to prevent attacks like XSS. You have simple and safe code working for you.
+A beleza sobre o objeto `request` é que todos os dados que passam pelo aplicativo são sanitizados automaticamente e evitam ataques como XSS. Você tem um código mais simples e seguro.
 
 ## Orientado a objetos vs modo funcional
 
@@ -248,7 +248,8 @@ Leaf suporta duas maneiras diferentes de você escrever seu código.
 ### Orientado a objetos
 
 Está é a maneira padrão da maior parte dos frameworks.
-Since leaf comes with classes, you can entirely build your aplication using those classes. like the `Leaf\Http\Response` class.
+Com Leaf foi contruído seguindo orientação,  você pode contruir sua aplicação inteira de modo orientado a objetos. 
+Como utilizando a classe `Leaf\Http\Response`.
 
 ```php
 <?php
@@ -258,15 +259,18 @@ require __DIR__ . "/vendor/autoload.php";
 $app = new Leaf\App;
 
 $app->get("/", function () {
-  echo "Hello world";
+  echo "Olá mundo";
 });
 
 $app->run();
 ```
 
-### Functional Mode
+### Modo funcional
 
-Classes become annoying to use and repeat, especially because of namespaces. You also sometimes need to put the instance of a class into a function's scope with `use`. Getting the particular instance of a class can be difficult which sometimes leads to reinitializing the class. For these reasons (and more), we created scopeless functions which allow you to quickly build your applications. These functions return instances of Leaf's classes so you don't need to use the classes yourself.
+Classes tornam-se incomodas de usar e repetidas, especialmente por causa dos `namespaces`. Você também pode precisar, algumas vezes, 
+colocar a instância de uma classe dentro do escopo de uma função, utilizando `use`. 
+Pegar a instância de uma classe pode ser difícil, algumas vezes, o que leva a reinicialização da classe. 
+Por essas razões (e outras), nós criamos  funções sem escopo que permite rapidamente construir aplicações. Essas funções devolvem instâncias de classes do framework para que você não precise usar as classes diretamente.
 
 ```php
 <?php
