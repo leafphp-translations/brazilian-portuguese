@@ -1,60 +1,61 @@
 # Aloe CLI
 
-Aloe is a simple but powerful console service that makes building your leaf apps just a simple walk in the park. Aloe CLI ships with the default Leaf console tool in the newer versions of Leaf API, Leaf MVC and Skeleton.
+O Aloe é um serviço de console simples, porém poderoso, que torna a construção de seus aplicativos Leaf uma tarefa fácil. O Aloe CLI vem com a ferramenta padrão de console Leaf nas novas versões do Leaf API, Leaf MVC e Skeleton.
 
-Aloe comes with a predefined set of commands which provide project scaffolding, database and app management right from the console. It also introduces a much simpler and cleaner way to write your commands.
+O Aloe vem com um conjunto predefinido de comandos que fornecem criação de projetos, gerenciamento de banco de dados e aplicativos diretamente do console. Ele também introduz uma maneira muito mais simples e limpa de escrever seus comandos.
 
-## Aloe List
+## Lista de Comandos do Aloe
 
 ```bash
 ALOE
 
-Usage:
+Uso:
   command [options] [arguments]
 
-Options:
-  -h, --help            Display this help message
-  -q, --quiet           Do not output any message
-  -V, --version         Display this application version
-      --ansi            Force ANSI output
-      --no-ansi         Disable ANSI output
-  -n, --no-interaction  Do not ask any interactive question
-  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+Opções:
+  -h, --help            Exibe esta mensagem de ajuda
+  -q, --quiet           Não exibe nenhuma mensagem
+  -V, --version         Exibe a versão desta aplicação
+      --ansi            Força a saída ANSI
+      --no-ansi         Desabilita a saída ANSI
+  -n, --no-interaction  Não faz nenhuma pergunta interativa
+  -v|vv|vvv, --verbose  Aumenta a verbosidade das mensagens: 1 para saída normal, 2 para saída mais verbosa e 3 para saída de depuração
 
-Available commands:
-  example        example command's description
-  help           Displays help for a command
-  interact       Interact with your application
-  list           Lists commands
-  serve          Start the leaf development server
+Comandos disponíveis:
+  example        Descrição do comando exemplo
+  help           Exibe ajuda para um comando
+  interact       Interage com seu aplicativo
+  list           Lista de comandos
+  serve          Inicia o servidor de desenvolvimento do Leaf
  aloe
-  aloe:config    Install aloe config
+  aloe:config    Instala a configuração do Aloe
  app
-  app:down       Place app in maintainance mode
-  app:up         Remove app from maintainance mode
+  app:down       Coloca o aplicativo no modo de manutenção
+  app:up         Remove o aplicativo do modo de manutenção
  d
-  d:command      Delete a console command
-  d:controller   Delete a controller
-  d:factory      Delete a model factory
-  d:migration    Delete a migration
-  d:model        Delete a model
-  d:seed         Delete a model seeder
+  d:command      Exclui um comando do console
+  d:controller   Exclui um controlador
+  d:factory      Exclui uma fábrica de modelos
+  d:migration    Exclui uma migração
+  d:model        Exclui um modelo
+  d:seed         Exclui uma semeadora de modelos
  db
-  db:install     Create new database from .env variables
-  db:migrate     Run the database migrations
-  db:rollback    Rollback all database migrations
-  db:seed        Seed the database with records
+  db:install     Cria um novo banco de dados a partir das variáveis .env
+  db:migrate     Executa as migrações do banco de dados
+  db:rollback    Reverte todas as migrações do banco de dados
+  db:seed        Popula o banco de dados com registros
  env
-  env:generate   Generate .env file
+  env:generate   Gera um arquivo .env
  g
-  g:command      Create a new console command
-  g:controller   Create a new controller class
-  g:factory      Create a new model factory
-  g:helper       Create a new helper class
-  g:migration    Create a new migration file
-  g:model        Create a new model class
-  g:seed         Create a new seed file
-  g:template     Create a new view file
+  g:command      Cria um novo comando do console
+  g:controller   Cria uma nova classe de controlador
+  g:factory      Cria uma nova fábrica de modelos
+  g:helper       Cria uma nova classe auxiliar
+  g:migration    Cria um novo arquivo de migração
+  g:model        Cria uma nova classe de modelo
+  g:seed         Cria um novo arquivo de semeadora
+  g:template     Cria um novo arquivo de visualização
  scaffold
-  scaffold:auth  Scaffold basic app authentication
+  scaffold:auth  Cria uma autenticação básica do aplicativo
+
 ```
