@@ -1,28 +1,29 @@
 # Sunset Aloe (BETA)
 
-v1.1 beta is the secomd release of Aloe CLI which introduces full support for Leaf MVC, new features, better support for custom libraries and so much more. Sunset Aloe also introduces integrations with Leaf Auth, creating a scaffold option to make authentication available in your app with only 1 command.
+Aloe CLI v1.1 beta é a segunda versão do Aloe CLI que introduz suporte total para Leaf MVC, novos recursos, melhor suporte para bibliotecas personalizadas e muito mais. O Sunset Aloe também introduz integrações com o Leaf Auth, criando uma opção de scaffolding para tornar a autenticação disponível em seu aplicativo com apenas um comando.
 
-## What's new
+## Novidades
 
-### Better Leaf MVC support
+### Melhor suporte para Leaf MVC
 
-Sunset Aloe is the first version of Aloe integrated out of the box with Leaf MVC. As such, it ships a tight integration with Leaf MVC and the already made integrations that come with Leaf API. So now, your Leaf MVC CLI is powered by aloe.
+O Sunset Aloe é a primeira versão do Aloe integrada com o Leaf MVC. Como tal, ele traz uma integração estreita com o Leaf MVC e as integrações já disponíveis que vêm com o Leaf API. Agora, seu Leaf MVC CLI é alimentado pelo Aloe.
 
-### Auth Scaffolding
+### Autenticação com scaffolding
 
-Sunset also includes auth scaffolding which simply allows you to add basic session based auth (login, signup, update profile and guards) to your app by simply running one command.
+O Sunset também inclui scaffolding de autenticação que permite adicionar autenticação básica baseada em sessão (login, cadastro, atualização de perfil e guardas) ao seu aplicativo com apenas um comando.
 
 ```sh
 php leaf scaffold:auth
 ```
 
-### Updated Stubs
+### Atualização de modelos
 
-These are basic templates generated when you run commands like `g:controller`. These templates have been updated to keep you up to date with both internal and external updates from Leaf API and Leaf MVC.
+Estes são modelos básicos gerados quando você executa comandos como g:controller. Estes modelos foram atualizados para mantê-lo atualizado com as atualizações internas e externas do Leaf API e do Leaf MVC.
 
-### Aloe Installer Class
 
-Another major update to Aloe is the inclusion of Aloe Installer which basically takes the stress out of making libraries which need to install files/routes in the working directory.
+### Classe de instalação do Aloe
+
+Outra atualização importante do Aloe é a inclusão da Classe de Instalação do Aloe, que basicamente retira o estresse de fazer bibliotecas que precisam instalar arquivos/rotas no diretório de trabalho.
 
 ```php
 use Aloe\Installer;
@@ -31,15 +32,15 @@ Installer::magicCopy($folderToInstall);
 Installer::installRoutes("$folderToInstall/routefiles/");
 ```
 
-**Installer currently only supports Leaf MVC and Leaf API.**
+**O instalador atualmente só suporta o Leaf MVC e o Leaf API.**
 
-### Updated Packages
+### Pacotes atualizados
 
-All dependencies of Aloe have been updated. This includes security patches and a bunch of updates to keep aloe up to date. Also, the core library behind aloe, symfony console has been updated as well, however, we do our best to maintain Aloe CLI's syntax, structure and config, so despite all the updates and external changes, the Aloe you know never changes.
+Todas as dependências do Aloe foram atualizadas. Isso inclui correções de segurança e uma série de atualizações para manter o Aloe atualizado. Além disso, a biblioteca central por trás do Aloe, o Symfony Console, também foi atualizada, no entanto, fazemos o nosso melhor para manter a sintaxe, a estrutura e a configuração do Aloe CLI, então apesar de todas as atualizações e mudanças externas, o Aloe que você conhece nunca muda.
 
-### Protected command methods
+### Métodos de comando protegidos
 
-To match the symfony console, Aloe also uses protected command methods in this version.
+Para corresponder ao Symfony Console, o Aloe também usa métodos de comando protegidos nesta versão.
 
 ```php
 protected function config()
@@ -57,57 +58,58 @@ protected function handle()
 }
 ```
 
-## Aloe List
+## Lista de Comandos do Aloe
 
 ```sh
 Leaf MVC v2.0
 
-Usage:
-  command [options] [arguments]
+Uso:
+  command [opções] [argumentos]
 
-Options:
-  -h, --help            Display help for the given command. When no command is given display help for the list command
-  -q, --quiet           Do not output any message
-  -V, --version         Display this application version
-      --ansi            Force ANSI output
-      --no-ansi         Disable ANSI output
-  -n, --no-interaction  Do not ask any interactive question
-  -v|vv|vvv, --verbose  Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
+Opções:
+  -h, --help            Exibe ajuda para o comando dado. Quando nenhum comando é dado, exibe ajuda para o comando de lista
+  -q, --quiet           Não exibe mensagem alguma
+  -V, --version         Exibe a versão desta aplicação
+      --ansi            Força a saída ANSI
+      --no-ansi         Desabilita a saída ANSI
+  -n, --no-interaction  Não faz nenhuma pergunta interativa
+  -v|vv|vvv, --verbose  Aumenta a verbosidade das mensagens: 1 para saída normal, 2 para saída mais detalhada e 3 para modo de depuração
 
-Available commands:
-  example        example command's description
-  help           Displays help for a command
-  interact       Interact with your application
-  list           Lists commands
-  serve          Start the leaf development server
+Comandos disponíveis:
+  example        descrição do comando exemplo
+  help           Exibe ajuda para um comando
+  interact       Interage com a sua aplicação
+  list           Lista comandos
+  serve          Inicia o servidor de desenvolvimento do Leaf
  aloe
-  aloe:config    Install aloe config
+  aloe:config    Instala a configuração do Aloe
  app
-  app:down       Place app in maintainance mode
-  app:up         Remove app from maintainance mode
+  app:down       Coloca a aplicação no modo de manutenção
+  app:up         Remove a aplicação do modo de manutenção
  d
-  d:command      Delete a console command
-  d:controller   Delete a controller
-  d:factory      Delete a model factory
-  d:migration    Delete a migration
-  d:model        Delete a model
-  d:seed         Delete a model seeder
+  d:command      Apaga um comando de console
+  d:controller   Apaga um controller
+  d:factory      Apaga uma factory de modelo
+  d:migration    Apaga uma migração
+  d:model        Apaga um modelo
+  d:seed         Apaga um seeder de modelo
  db
-  db:install     Create new database from .env variables
-  db:migrate     Run the database migrations
-  db:rollback    Rollback all database migrations
-  db:seed        Seed the database with records
+  db:install     Cria um novo banco de dados a partir das variáveis .env
+  db:migrate     Executa as migrações do banco de dados
+  db:rollback    Desfaz todas as migrações do banco de dados
+  db:seed        Alimenta o banco de dados com registros
  env
-  env:generate   Generate .env file
+  env:generate   Gera um arquivo .env
  g
-  g:command      Create a new console command
-  g:controller   Create a new controller class
-  g:factory      Create a new model factory
-  g:helper       Create a new helper class
-  g:migration    Create a new migration file
-  g:model        Create a new model class
-  g:seed         Create a new seed file
-  g:template     Create a new view file
+  g:command      Cria um novo comando de console
+  g:controller   Cria uma nova classe de controller
+  g:factory      Cria uma nova factory de modelo
+  g:helper       Cria uma nova classe helper
+  g:migration    Cria um novo arquivo de migração
+  g:model        Cria uma nova classe de modelo
+  g:seed         Cria um novo arquivo de seeder
+  g:template     Cria um novo arquivo de view
  scaffold
-  scaffold:auth  Scaffold basic app authentication
+  scaffold:auth  Cria um esqueleto de autenticação básica para a aplicação
+
 ```
