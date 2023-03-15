@@ -1,38 +1,43 @@
 <!-- markdownlint-disable no-duplicate-header -->
 # Changelog
 
-## v3.0 (Beta) - 27 November
+# Changelog
 
-### Added
+## v3.0 (Beta) - 27 de novembro
 
-- Added support for global functions
-- Added more support for configuring with env variables.
-- Added `script` method on app to handle modes.
-- Added automatic loading for major modules.
-- Added CSRF handler.
-- Added autoloading for CSRF module
-- Added CORS handler for `leafs/cors`
-- Updated error pages
-- Added `.env` precedence over local config
+### Adicionado
 
-### Fixed
+- Suporte para funções globais
+- Mais suporte para configuração com variáveis de ambiente.
+- Método `script` adicionado no app para lidar com modos.
+- Carregamento automático para módulos principais.
+- Gerenciador de CSRF.
+- Carregamento automático para o módulo de CSRF.
+- Gerenciador de CORS para `leafs/cors`.
+- Páginas de erro atualizadas.
+- O arquivo `.env` tem precedência sobre a configuração local.
 
-- Fixed PHP 7.3 unsupported types
-- Created a standard for functional mode
-- Revamped error pages
-- Fixed potential type errors
 
-### Changed
+### Regenerate response
 
-- You no longer need to initialize Leaf.
-- Moved `Leaf\Http` namespace to Http module
-- Moved base controller, model, database and to mvc-core module
-- Disabled logging by default
-- Moved bareui, fs, auth, form, cookies, session, db and date into modules
-- Moved `Leaf\Router` into installable module.
-- Changed leaf router `add` to `use`
-- Tied leaf router directly to `Leaf\App`
-- Upgraded all dependencies
+### Correções
+
+- Corrigido tipos não suportados pelo PHP 7.3
+- Criado um padrão para o modo funcional
+- Páginas de erro renovadas
+- Corrigidos erros potenciais de tipo
+
+### Alterações
+
+- Não é mais necessário inicializar o Leaf.
+- Namespace `Leaf\Http` movido para o módulo Http
+- Controller, model, database e base movidos para o módulo mvc-core
+- Logging desativado por padrão
+- bareui, fs, auth, form, cookies, session, db e date movidos para módulos
+- `Leaf\Router` movido para módulo instalável
+- `add` do leaf router alterado para `use`
+- Leaf router conectado diretamente ao `Leaf\App`
+- Atualizadas todas as dependências.
 
 ### Removed
 
