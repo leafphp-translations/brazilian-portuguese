@@ -1,8 +1,6 @@
 <!-- markdownlint-disable no-duplicate-header -->
 # Changelog
 
-# Changelog
-
 ## v3.0 (Beta) - 27 de novembro
 
 ### Adicionado
